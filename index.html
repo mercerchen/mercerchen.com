@@ -138,7 +138,7 @@
                         </h6>
                       </div>
                       <div class="col-md-7 col-4">
-                        <h6>Daily Growing
+                        <h6> <a href=""> Daily Growing </a>
                           <br />
                           <small>By Atlan</small>
                         </h6>
@@ -148,15 +148,12 @@
                   <hr />
                   <li>
                     <div class="row">
-                      <div class="col-md-2 col-3">
+                      <div class="col-md-5 col-3">
                         <h6>My Favourite Novel
                         </h6>
                       </div>
                       <div class="col-md-7 col-4">
-                        <h6> All Quiet on the Western Front
-                          <br />
-                          <small> by Erich Maria Remarque </small>
-                        </h6>
+                        <a tabindex="0" class="btn btn-sm btn-default" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"> All Quiet on the Western Front </a>
                       </div>
                     </div>
                   </li>
@@ -292,7 +289,7 @@
       <div class="row">
         <!-- Muziko -->
         <div class="col-md-4">
-          <div class="card" data-background="image" style="background-image: url('./assets/img/sections/anders-jilden.jpg')">
+          <div class="card" data-background="image" style="background: black">
             <div class="card-body">
               <h6 class="card-category"> Muziko </h6>
               <div class="card-icon">
@@ -311,7 +308,7 @@
 
         <!-- Trending: News -->
         <div class="col-md-4">
-          <div class="card" data-background="image" style="background-image: url('./assets/img/sections/uriel-soberanes.jpg')">
+          <div class="card" data-background="image" style="background: black">
             <div class="card-body">
               <h6 class="card-category"> Trending: News </h6>
               <div class="card-icon">
@@ -330,7 +327,7 @@
 
         <!-- Trending -->
         <div class="col-md-4">
-          <div class="card" data-background="image" style="background-image: url('./assets/img/sections/jan-sendereks.jpg')">
+          <div class="card" data-background="image" style="background: black">
             <div class="card-body">
               <h6 class="card-category"> Trending </h6>
               <div class="card-icon">
@@ -546,6 +543,12 @@
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwzPTSRQlEmZTFjPsG4jUz3voJ89Ohyag"></script>
   <!--  Plugin for presentation page - isometric cards  -->
   <script src="assets/js/plugins/presentation-page/main.js"></script>
+  <!-- Dismissible Popover -->
+  <script> 
+    $('.popover-dismiss').popover({
+      trigger: 'focus'
+    })
+  </script>
 </body>
 
 </html>
