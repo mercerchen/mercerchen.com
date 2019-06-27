@@ -16,12 +16,13 @@
   <!-- CSS Files -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/css/paper-kit.css?v=2.3.0" rel="stylesheet" />
+  <link href="assets/css/aos.css" rel="stylesheet" />
   <link href="assets/css/general.css" rel="stylesheet" />
 </head>
 
 <body class="profile-page sidebar-collapse">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top nav-down navbar-transparent" color-on-scroll="300">
+  <nav class="navbar navbar-expand-lg fixed-top nav-down navbar-transparent" color-on-scroll="500">
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="https://www.mercerchen.com" rel="tooltip" title="All About Mercer" data-placement="bottom" target="_blank">
@@ -35,15 +36,15 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#profile" class="nav-link">
               Profile </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#education" class="nav-link">
               Education </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#experience" class="nav-link">
               Experience </a>
           </li>
           <li class="dropdown nav-item">
@@ -63,11 +64,11 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#blog" class="nav-link">
               Blogs </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#contact" class="nav-link">
               Contact </a>
           </li>
         </ul>
@@ -78,7 +79,7 @@
   <!-- End Navbar -->
 
   <!-- Introduction -->
-  <div class="page-header page-header-small" style="background-image: url('assets/img/profile-page/new-york.jpg'); height: 500px">
+  <div id="profile" class="page-header page-header-small" style="background-image: url('assets/img/profile-page/new-york.jpg'); height: 500px">
     <div class="filter"></div>
   </div>
   <div class="wrapper">
@@ -118,27 +119,108 @@
           <div class="nav-tabs-wrapper">
             <ul class="nav nav-tabs" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#follows" role="tab"> Basic Info</a>
+                <a class="nav-link active" data-toggle="tab" href="#basics" role="tab"> Basics </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#following" role="tab"> Detailed Info </a>
+                <a class="nav-link" data-toggle="tab" href="#favourites" role="tab"> Favourites </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#following" role="tab"> Beliefs </a>
               </li>
             </ul>
           </div>
         </div>
+        
+        <!-- Tabs -->
         <div class="tab-content">
-          <div class="tab-pane active" id="follows" role="tabpanel">
+          <!-- Basics -->
+          <div class="tab-pane active" id="basics"> 
+            <div class="row">
+              <div class="col-md-6 ml-auto mr-auto">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- Age -->
+                    <div class="row"> 
+                      <div class="col-md-5">
+                        <h6> Age: </h6>
+                      </div>
+                      <div class="col-md-7">
+                        <h6> 19 </h6>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- End Age -->
+
+                    <!-- Language -->
+                    <div class="row"> 
+                      <div class="col-md-5">
+                        <h6> Languages: </h6>
+                      </div>
+                      <div class="col-md-7">
+                        <h6> English, Mandarin </h6>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- End Language -->
+
+                    <!-- Religion -->
+                    <div class="row"> 
+                      <div class="col-md-5">
+                        <h6> Religion: </h6>
+                      </div>
+                      <div class="col-md-7">
+                        <h6> None. Maybe Capitalism? </h6>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- End Religion -->
+
+                    <!-- Work-Life Balance -->
+                    <div class="row"> 
+                      <div class="col-md-5">
+                        <h6> Work-Life Balance: </h6>
+                      </div>
+                      <div class="col-md-7">
+                        <h6> not important to me </h6>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- End Work-Life Balance -->
+
+                    <!-- Mostly code in -->
+                    <div class="row"> 
+                      <div class="col-md-5">
+                        <h6> Mostly code in: </h6>
+                      </div>
+                      <div class="col-md-7">
+                        <h6> Python </h6>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- End Mostly code in -->
+                                       
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Basics -->
+
+          <!-- Favourites -->
+          <div class="tab-pane" id="favourites" role="tabpanel">
             <div class="row">
               <div class="col-md-6 ml-auto mr-auto">
                 <ul class="list-unstyled follows">
+                  <!-- Favourite Music -->
                   <li>
                     <div class="row">
                       <div class="col-md-5 col-3">
-                        <h6> My Favourite Music
+                        
+                        <h6> Music
                         </h6>
                       </div>
                       <div class="col-md-7 col-4">
-                        <h6> <a href=""> Daily Growing </a>
+                        <h6> Daily Growing 
                           <br />
                           <small>By Atlan</small>
                         </h6>
@@ -146,25 +228,80 @@
                     </div>
                   </li>
                   <hr />
+                  <!-- End Favourite Music -->
+
+                  <!-- Favourite City -->
                   <li>
                     <div class="row">
                       <div class="col-md-5 col-3">
-                        <h6>My Favourite Novel
+                        <h6> City
                         </h6>
                       </div>
                       <div class="col-md-7 col-4">
-                        <a tabindex="0" class="btn btn-sm btn-default" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"> All Quiet on the Western Front </a>
+                        <h6> New York City
+                          <br />
+                          <small> Who doesn't love New York </small>
+                        </h6>
                       </div>
-                    </div>
                   </li>
+                  <hr />
+                  <!-- End Favourite City -->
+
+                  <!-- Favourite Novel -->
+                  <li>
+                    <div class="row">
+                      <div class="col-md-5 col-3">
+                        <h6> Novel
+                        </h6>
+                      </div>
+                      <div class="col-md-7 col-4">
+                        <h6> All Quiet on the Western Front
+                          <br />
+                          <small> By Erich Maria Remarque </small>
+                        </h6>
+                      </div>
+                  </li>
+                  <hr />
+                  <!-- End Favourite Novel -->
+
+                  <!-- Favourite Movie -->
+                  <li>
+                    <div class="row">
+                      <div class="col-md-5 col-3">
+                        <h6> Movie
+                        </h6>
+                      </div>
+                      <div class="col-md-7 col-4">
+                        <h6> The Curious Case of Benjamin Button
+                          <br />
+                          <small> “You never know what's coming for you.”  </small>
+                        </h6>
+                      </div>
+                  </li>
+                  <!-- End Favourite Movie -->
                 </ul>
               </div>
             </div>
           </div>
-          <div class="tab-pane text-center" id="following" role="tabpanel">
-            <h3 class="text-muted">Not following anyone yet :(</h3>
-            <button class="btn btn-warning btn-round">Find artists</button>
+          <!-- End Favourites -->
+
+          <!-- Beliefs -->
+          <div class="tab-pane" id="following" role="tabpanel">
+            <div class="row">
+              <div class="col-md-7 ml-auto mr-auto">
+                <div class="card">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> Most people are neither good nor evil </li>
+                    <li class="list-group-item"> A short, merry life > A long, dull life </li>
+                    <li class="list-group-item"> Freedom of Choice, no matter the outcome  </li>
+                    <li class="list-group-item"> Equal opportunity </li>
+                    <li class="list-group-item"> Meritocracy </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- End Beliefs -->
         </div>
         <!-- End IntroSelect -->
 
@@ -174,7 +311,7 @@
   <!-- End Introduction -->
 
   <!-- Education -->
-  <div class="section section-feature cd-section" id="features">
+  <div id="education" class="section section-feature cd-section" id="features">
     <div class="features-1">
       <div class="container">
         <div class="row">
@@ -186,8 +323,8 @@
           <!-- High School -->
           <div class="col-md-6">
             <div class="info">
-              <img src="assets/img/profile-page/gould.png" alt="..." style="height: 80px">
-              <div class="description">
+              <img data-aos="fade-right" src="assets/img/profile-page/gould.png" alt="..." style="height: 80px">
+              <div class="description" data-aos="fade-up">
                 <h4 class="info-title"> Gould Academy </h4>
                 <h6 class="info-title"> High School Diploma </h6>
                 <p class="description"> 2015 - 2018 </p>
@@ -199,8 +336,8 @@
           <!-- College -->
           <div class="col-md-6">
             <div class="info">
-              <img src="assets/img/profile-page/washu.png" alt="..." style="height: 80px">
-              <div class="description">
+              <img data-aos="fade-left"  src="assets/img/profile-page/washu.png" alt="..." style="height: 80px">
+              <div class="description" data-aos="fade-up">
                 <h4 class="info-title"> Washington University in St. Louis </h4>
                 <h6 class="info-title"> Bachelor of Applied Science </h6>
                 <p class="description"> 2018 - Present </p>
@@ -216,7 +353,7 @@
   <!-- End Education -->
 
   <!-- Experience -->
-  <div class="section secion-blog cd-section" id="blogs">
+  <div id="experience" class="section secion-blog cd-section" id="blogs">
     <div class="blog-1" id="blog-1">
       <div class="container">
         <div class="row">
@@ -226,12 +363,12 @@
             <!-- Microsoft Explorer Intern -->
             <div class="card card-blog">
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5" data-aos="fade-right">
                   <div class="card-image">
                     <img class="img" src="./assets/img/profile-page/microsoft.jpg" />
                   </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7" data-aos="fade-left">
                   <div class="card-body">
                     <h3 class="card-title"> Explorer Intern </h3>
                     <h6 class="card-category"> May 2019 - Aug 2019 </h6>
@@ -250,12 +387,12 @@
             <!-- WashU I2 NLP Researcher -->
             <div class="card card-blog">
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5"data-aos="fade-right">
                   <div class="card-image">
                     <img class="img" src="./assets/img/profile-page/washu_med.png" style="padding: 40px; padding-left: 50px"/>
                   </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7" data-aos="fade-left">
                   <div class="card-body">
                     <h3 class="card-title"> Undergraduate Research Assistant </h3>
                     <h6 class="card-category"> Nov 2018 - Present </h6>
@@ -275,7 +412,7 @@
   <!-- End Experience -->
 
   <!-- Project --> 
-  <div class="features-2">
+  <div id="project" class="features-2">
     <div class="container">
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto text-center">
@@ -289,14 +426,14 @@
       <div class="row">
         <!-- Muziko -->
         <div class="col-md-4">
-          <div class="card" data-background="image" style="background: black">
-            <div class="card-body">
+          <div class="card" data-background="image" style="background: #5e5e5e">
+            <div data-aos="fade-right" class="card-body">
               <h6 class="card-category"> Muziko </h6>
               <div class="card-icon">
                 <i class="nc-icon nc-single-copy-04"></i>
               </div>
-              <p class="card-description">Imagine if you have one music list for all music apps...</p>
-              <div class="card-footer">
+              <p data-aos="fade-right" class="card-description">Imagine if you have one music list for all music apps...</p>
+              <div data-aos="fade-right" class="card-footer">
                 <a href="#pablo" class="btn btn-link btn-neutral">
                   <i class="fa fa-book" aria-hidden="true"></i> Show more
                 </a>
@@ -308,14 +445,14 @@
 
         <!-- Trending: News -->
         <div class="col-md-4">
-          <div class="card" data-background="image" style="background: black">
-            <div class="card-body">
+          <div class="card" data-background="image" style="background: #5e5e5e">
+            <div data-aos="zoom-in" class="card-body">
               <h6 class="card-category"> Trending: News </h6>
               <div class="card-icon">
                 <i class="nc-icon nc-time-alarm"></i>
               </div>
-              <p class="card-description"> Be the first one to find out what is going on around the world</p>
-              <div class="card-footer">
+              <p data-aos="zoom-in" class="card-description"> Be the first one to find out what is going on around the world</p>
+              <div data-aos="zoom-in" class="card-footer">
                 <a href="#pablo" class="btn btn-link btn-neutral">
                   <i class="fa fa-book" aria-hidden="true"></i> Show more
                 </a>
@@ -327,14 +464,14 @@
 
         <!-- Trending -->
         <div class="col-md-4">
-          <div class="card" data-background="image" style="background: black">
-            <div class="card-body">
+          <div class="card" data-background="image" style="background: #5e5e5e">
+            <div data-aos="fade-left" class="card-body">
               <h6 class="card-category"> Trending </h6>
               <div class="card-icon">
                 <i class="nc-icon nc-world-2"></i>
               </div>
-              <p class="card-description"> Best way to know what is trending around you  </p>
-              <div class="card-footer">
+              <p data-aos="fade-left" class="card-description"> Best way to know what is trending around you  </p>
+              <div data-aos="fade-left" class="card-footer">
                 <a href="#pablo" class="btn btn-link btn-neutral">
                   <i class="fa fa-book" aria-hidden="true"></i> In Development
                 </a>
@@ -352,7 +489,7 @@
   <!-- End Project -->
 
   <!-- Blog -->
-  <div class="blog-2 section" style="padding-bottom: 150px">
+  <div id="blog" class="blog-2 section" style="padding-bottom: 150px">
     <div class="container">
       <div class="row">
         <div class="col-md-10 ml-auto mr-auto">
@@ -360,7 +497,7 @@
           <br />
           <div class="row">
             <!-- Blog Card One -->
-            <div class="col-md-4">
+            <div data-aos="fade-right" class="col-md-4">
               <div class="card card-blog">
                 <div class="card-image">
                   <a href="#pablo">
@@ -383,7 +520,7 @@
             <!-- End Blog Card One -->
 
             <!-- Blog Card Two -->
-            <div class="col-md-4">
+            <div data-aos="zoom-in" class="col-md-4">
               <div class="card card-blog">
                 <div class="card-image">
                   <a href="#pablo">
@@ -408,7 +545,7 @@
             <!-- End Blog Card Two -->
 
             <!-- Blog Card Three -->
-            <div class="col-md-4">
+            <div data-aos="fade-left" class="col-md-4">
               <div class="card card-blog">
                 <div class="card-image">
                   <a href="#pablo">
@@ -433,7 +570,7 @@
             <!-- End Blog Card Three -->
           </div>
           <br>
-          <a href="#pablo" class="btn btn-warning btn-round"> Read More ... </a>
+          <a data-aos="fade-right" href="#pablo" class="btn btn-warning btn-round"> Read More ... </a>
         </div>
       </div>
     </div>
@@ -441,10 +578,10 @@
   <!-- End Blogs -->
 
   <!-- Contact -->
-  <div class="contactus-1" style="background-image: url('assets/img/profile-page/contact.png'); background-size: cover">
+  <div id="contact" class="contactus-1" style="background-image: url('assets/img/profile-page/contact.png'); background-size: cover; margin-bottom: 20px">
     <div class="container">
       <div class="col-md-6">
-        <div class="card card-contact card-raised">
+        <div data-aos="fade-right" class="card card-contact card-raised">
           <div class="card-header header-raised header-primary text-center">
             <h4 class="card-title"> Contact Me </h4>
           </div>
@@ -543,6 +680,15 @@
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwzPTSRQlEmZTFjPsG4jUz3voJ89Ohyag"></script>
   <!--  Plugin for presentation page - isometric cards  -->
   <script src="assets/js/plugins/presentation-page/main.js"></script>
+  <!--  Animation on Scroll -->
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-out',
+      duration: 800,
+      delay: 200
+    });
+  </script>
   <!-- Dismissible Popover -->
   <script> 
     $('.popover-dismiss').popover({
